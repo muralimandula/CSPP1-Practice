@@ -1,8 +1,7 @@
-print ( "Enter a number : " )
-happy = int(input());
-if happy > 2 :
+"""Happy Hello"""
+print("Enter a number : ")
+HAPPY = int(input())
+if HAPPY > 2:
     print("hello world")
-else :
-    print ("It's not greater than 2.")
-
-
+else:
+    print("It's not greater than 2.")
