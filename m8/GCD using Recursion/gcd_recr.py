@@ -7,7 +7,7 @@ def gcd_recursion(a_val, b_val):
     returns: a positive integer,
     the greatest common divisor of a & b.
     '''
-    if b_val == 0:
+    if b_val == 0: 
         return a_val
     return gcd_recursion(b_val, a_val%b_val)
 def main():

@@ -17,4 +17,5 @@ def main():
     data = input()
     data = data.split()
     print(iter_power(float(data[0]), int(data[1])))
+
 main()
