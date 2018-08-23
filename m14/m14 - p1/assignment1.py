@@ -94,7 +94,7 @@ class Message():
         Returns: a COPY of self.valid_words
         '''
         return self.valid_words[:]
-    
+
     @classmethod
     def build_shift_dict(cls, shift):
         '''
