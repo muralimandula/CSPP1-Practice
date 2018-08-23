@@ -64,16 +64,13 @@ WORDLIST_FILENAME = 'words.txt'
 # Helper code End
 
 
-### Paste your implementation of the Message class here
-        
+### Paste your implementation of the Message class her
 class Message(object):
     ### DO NOT MODIFY THIS METHOD ###
     def __init__(self, text):
         '''
         Initializes a Message object
-                
         text (string): the message's text
-
         a Message object has two attributes:
             self.message_text (string, determined by input text)
             self.valid_words (list, determined using helper function load_words
@@ -85,7 +82,6 @@ class Message(object):
     def get_message_text(self):
         '''
         Used to safely access self.message_text outside of the class
-        
         Returns: self.message_text
         '''
         return self.message_text
@@ -99,15 +95,15 @@ class Message(object):
         Returns: a COPY of self.valid_words
         '''
         return self.valid_words[:]
-        
+
     def build_shift_dict(self, shift):
         '''
         Creates a dictionary that can be used to apply a cipher to a letter.
         The dictionary maps every uppercase and lowercase letter to a
         character shifted down the alphabet by the input shift. The dictionary
         should have 52 keys of all the uppercase letters and all the lowercase
-        letters only.        
-        
+        letters only.
+
         shift (integer): the amount by which to shift every letter of the 
         alphabet. 0 <= shift < 26
 
@@ -129,7 +125,7 @@ class Message(object):
         Applies the Caesar Cipher to self.message_text with the input shift.
         Creates a new string that is self.message_text shifted down the
         alphabet by some number of characters determined by the input shift        
-        
+
         shift (integer): the shift with which to encrypt the message.
         0 <= shift < 26
 
@@ -146,7 +142,7 @@ class Message(object):
                 caesar_string += each_char
         self.message_text = caesar_string
         return self.message_text
-        
+
 def main():
     '''
         Function to handle testcases
